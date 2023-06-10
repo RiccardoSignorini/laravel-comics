@@ -1,0 +1,39 @@
+#jumbotron{
+    height: 400px;
+    background-image: url(/image/jumbotron.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    span{
+        color: white;
+        background-color: rgb(0, 136, 245);
+        bottom: -20px;
+    }
+    
+}
+
+
+#bg-black{
+    background-color: rgb(28, 28, 28);
+
+    button{
+        background-color: rgb(0, 136, 245);
+        color: white;
+        border: 0;
+    }
+}
+
+#body-second{
+    height: 100px;
+    background-color: rgb(0, 136, 245);
+    color: white;
+
+    #center{
+        line-height: 100px;
+
+        img{
+            height: 50px;
+            margin: 0 0.8rem;
+        }    
+    }
+}
