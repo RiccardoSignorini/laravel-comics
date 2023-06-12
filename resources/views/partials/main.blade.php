@@ -3,23 +3,23 @@
     $solutions = [
         [
             'name' => 'DIGITAL COMICS',
-            'url' => '/image/buy-comics-digital-comics.png'
+            'url' => 'http://127.0.0.1:8000/images/buy-comics-digital-comics.png'
         ],
         [
             'name' => 'DC MERCHANDISE',
-            'url' => '/image/buy-comics-merchandise.png'
+            'url' => 'http://127.0.0.1:8000/images/buy-comics-merchandise.png'
         ],
         [
             'name' => 'SUBSCRIPTION',
-            'url' => '/image/buy-comics-subscriptions.png'
+            'url' => 'http://127.0.0.1:8000/images/buy-comics-subscriptions.png'
         ],
         [
             'name' => 'COMIC SHOP LOCATOR',
-            'url' => '/image/buy-comics-shop-locator.png'
+            'url' => 'http://127.0.0.1:8000/images/buy-comics-shop-locator.png'
         ],
         [
             'name' => 'DC POWER VISA',
-            'url' => '/image/buy-dc-power-visa.svg'
+            'url' => 'http://127.0.0.1:8000/images/buy-dc-power-visa.svg'
         ],
     ];
     
@@ -114,7 +114,7 @@
         <div class="d-flex flex-wrap container text-center justify-content-around p-5">
             @foreach( $covers as $elem )
                 <div class="col-lg-2 text-center">
-                    <img src="{{$elem['thumb']}}" alt="">
+                    <img src="{{ $elem['thumb'] }}" alt="">
                     <div class="icon">
                         <h6>{{ $elem['series'] }}</h6>
                         <p>Type: {{ $elem['type'] }}</p>
@@ -134,10 +134,12 @@
         <div class="container">
             <div class="d-flex justify-content-around">
                 <div class="d-flex align-items-center">
-                    <div id="center" class="d-flex align-items-center">
-                        <img src="" alt="">
-                        <span></span>
-                    </div>
+                    @foreach( $solutions as $elem )
+                        <div id="center" class="d-flex align-items-center">
+                            <img src="{{ $elem['url'] }}" alt="">
+                            <span>{{ $elem['name'] }}</span>
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </div>

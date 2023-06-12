@@ -116,11 +116,11 @@
         <button>SIGN-UP NOW!</button>
         <div class="d-flex">
           <h4>FOLLOW US</h4>
-          <img src="/image/footer-facebook.png" alt="">
-          <img src="/image/footer-twitter.png" alt="">
-          <img src="/image/footer-youtube.png" alt="">
-          <img src="/image/footer-pinterest.png" alt="">
-          <img src="/image/footer-periscope.png" alt="">
+          <img src="http://127.0.0.1:8000/images/footer-facebook.png" alt="">
+          <img src="http://127.0.0.1:8000/images/footer-twitter.png" alt="">
+          <img src="http://127.0.0.1:8000/images/footer-youtube.png" alt="">
+          <img src="http://127.0.0.1:8000/images/footer-pinterest.png" alt="">
+          <img src="http://127.0.0.1:8000/images/footer-periscope.png" alt="">
         </div>
       </div>
       

@@ -59,7 +59,7 @@
 <header class="container d-flex align-items-center justify-content-between">
 
     <div>
-        <img src="/image/dc-logo.png" alt="">    
+        <img src="http://127.0.0.1:8000/images/dc-logo.png" alt="">    
     </div>
 
     <div>
