@@ -112,6 +112,16 @@
     <!-- PROPS SINGOLA CARD CICLATA -->
     <div id="bg-black">
         <div class="d-flex flex-wrap container text-center justify-content-around p-5">
+            @foreach( $covers as $elem )
+                <div class="col-lg-2 text-center">
+                    <img src="{{$elem['thumb']}}" alt="">
+                    <div class="icon">
+                        <h6>{{ $elem['series'] }}</h6>
+                        <p>Type: {{ $elem['type'] }}</p>
+                        <p>Price: {{ $elem['price'] }}</p>
+                    </div>
+                </div>
+            @endforeach
             <!-- QUI CI VANNO LE CARD -->
             <button class="px-5 py-2 my-4">
                 LOAD MORE
